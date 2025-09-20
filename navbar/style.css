@@ -130,7 +130,7 @@ nav{
   visibility: visible;
   outline: 2px solid var(--secondary-color);
   outline-offset: -4px;
-  transition: all 0.8s;
+  transition:  0.8s;
 }
 .nav-loginbtn > button:hover{
   cursor:pointer;

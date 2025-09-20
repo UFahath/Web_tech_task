@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- Main Container -->
+  <div class="root">
+
+    <!-- form -->
+    <div class="form-container">
+      <!-- form heading -->
+      <div class="form-header">
+        <h1>Login</h1>
+      </div>
+      <!-- form main -->
+      <form action="">
+        <!-- 1 -->
+        <div class="input-groups">
+          <!-- <label for="uname">Username</label> -->
+          <span class="input-with-icon">
+            <input type="text" name="uname" id="uname" placeholder="Username">
+            <i class="fa-solid fa-user"></i>
+          </span>
+        </div>
+
+        <!-- 2 -->
+        <div class="input-groups">
+          <span class="input-with-icon">
+            <!-- <label for="pwd">Password</label> -->
+            <input type="pwd" name="pwd" id="pwd" placeholder="Password">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+        <!-- Rember me & forget password-->
+        <div class="input-group-remeber">
+          <div class="rember-me">
+            <input type="checkbox" name="Rember me" id="Remember me">
+            <label for="Remeber me">Remeber me</label>
+          </div>
+          <div class="forget-password">
+            <a href="#">Forget Password?</a>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="btn-class">
+          <button>Login</button>
+        </div>
+
+        <!-- Register-me -->
+
+        <div class="register-redirect">
+          <span>
+            Don't have an account?
+          </span>
+          <a href="#">Register</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
