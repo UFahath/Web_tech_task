@@ -1,3 +1,5 @@
+/* CSS Reset */
+
 *{
   margin:0;
   padding:0;
@@ -5,65 +7,72 @@
 }
 
 body{
-  background: url(./3165.jpg) no-repeat center;
-  background-size:cover;
+ 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body::-webkit-scrollbar{
-  display:none;
-}
-input{
-  outline:none;
-  color:white;
 
-}
-input[type=text]:hover::placeholder,input[type=pwd]:hover::placeholder{
-  transform:translateY(-50%) translateX(-9%) scale(0.8);
-    transition:all 0.5s;
-}
+
+/* Parent Container */
 .root{
+   background: url(./3165.jpg) no-repeat center;
+  background-size:cover;
   width: 100%;
   height:100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/*Note::
+       1)for transparent background set the background color white reduce the opacity and 
+         apply blurness through blur function using backdrop-filter property
+       2)for floating label used pattern attribute value and translate form center to top so -50%(translateY()) and 
+         then center to left -9% (translateX())and size reduced using scale()
+*/
+
+
+/* Parent Containers Child */
 .form-container{
   background-color: rgba(255, 255, 255, 0.1);
   border:2px solid rgba(255, 255, 255, 0.5);
   color:white;
   width:400px;
-  height: 60%;
+  height: 65%;
   padding:1em;
   backdrop-filter:blur(9px);
-  border-radius:5px;
-  animation:box 5s;
-  transform: perspective(10px);
+  border-radius:20px;
+  /* animation:box 5s; */
 }
+
+/* Parent Container Childs  heading */
+.form-header{
+  text-align: center;
+  /* background-color: blue; */
+  padding-top: 1em;
+}
+
+/* Form tag */
 form{
-  height: 80%;
+  height: 85%;
 /* background-color: green; */
   display:flex;
   flex-direction:column;
-  /* justify-content: space-evenly; */
-  row-gap:14px;
+  justify-content: space-evenly;
   align-items: center;
-  /* padding-bottom:10px; */
 }
-.form-header{
-  display:flex;
-  justify-content: center;
-  /* background-color: blue; */
-  padding: 1em;
-}
+
+/* Input text & password div */
 .input-groups{
    
   width: 100%;
   padding:1em;
-  display: flex;
-  justify-content: center;
+  /* background-color: green; */
 }
+
+/* Inputs of text and password */
 .input-groups input{
+   outline:none;
+  color:white;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter:blur(9px);
   border:none;
@@ -72,53 +81,100 @@ form{
   width:100%;
   border-radius:20px;
 }
-.input-groups  ::placeholder{
+
+
+input[type=text]:focus,input[type=pwd]:focus{
+  border: 2px solid white;
+}
+/* Input text and password placeholder movement upon focus(Floating) */
+input[type=text]:focus::placeholder,
+input[type=pwd]:focus::placeholder{
+  transform:translateY(-50%) translateX(-9%) scale(0.8);
+    color:white;
+    transition:all 0.5s;
+}
+/* input[type=text]:focus+i,input[type=pwd]:focus+i{
+  color:white;
+} */
+/* Input text and password placeholder text-color */
+ input[type=text]::placeholder,
+ input[type=pwd]::placeholder{
   color:rgba(255, 255, 255);
 }
+
+/* Inputs text and pwd with their icon innermost*/
 .input-with-icon{
   width:100%;
   display:flex;
-  justify-content: center;
   align-items: center;
   position:relative;
 }
+/* font-awesome user and font-awesome lock icon positioned based on input-with-icon div */
 i{
   position: absolute;
   right:10px;
 }
-/* remember & Forget */
+/* remember & Forget  division*/
 .input-group-remeber{
   width:90%;
+  height: 10%;
+   /* background-color: green; */
   display: flex;
   justify-content:space-between;
+  align-items: center;
 }
+
+/* remember Me checkbox text color */
 .input-group-remeber input[type=checkbox]{
-  accent-color:rgba(255, 255, 255, 0.3);
+  accent-color:hsla(274, 52%, 51%);
+  
 }
+
+/* All the anchor tag font-color and text-underline removal */
 a{
   color:white;
   text-decoration:none;
+  font-weight:bold;
 }
+
+/* Button divison */
 .btn-class{
   width:100%;
-  /* border:2px solid black; */
-  text-align: center;
+  height:20%;
+  padding:1em;
+   /* background-color: green; */
+   display: flex;
+   justify-content: center;
 }
+
+/* Login button */
 .btn-class>button{
-  padding:1em 12em;
+  width:80%;
   border:none;
+  font-size: 1rem;
+  font-weight:bold;
+  color:hsla(274, 52%, 51%);
   border-radius:50px;
 }
-.register-redirect{
-   padding-top:13px;
-}
-@keyframes box{
-  from{
-    transform: translateY(500px) rotateZ(360deg);
-    /* overflow-y:hidden; */
-  }
-  to{
-    transform: translateY(-0px);
 
-  }
+
+/* Login button hover */
+.btn-class>button:hover{
+  cursor:pointer;
+  background-color:hsla(274, 52%, 51%,0.2);
+  border:2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter:blur(10px);
+  box-shadow:1px 1px 4px 4px white;
+  color:white;
+  transition:all 0.5s;
+}
+
+/* Register div */
+.register-redirect{
+      /* background-color: green; */
+      width:100%;
+   height: 13%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
 }
