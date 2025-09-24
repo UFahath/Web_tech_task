@@ -1,0 +1,89 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.root{
+  width:100%;
+  height:100vh;
+  /* font-family: */
+}
+/* -------------header------------------ */
+.main-header{
+  display:flex;
+  justify-content:space-between;
+  padding:1rem;
+}
+/* header - address */
+/* main-address && edu-address && .job-descr1 line-height */
+.main-address,.edu-address,.job-descr1{
+    line-height:24px;
+}
+.main-address{
+  text-align:end;
+}
+
+/* header - links */
+.main-address > a{
+  text-decoration:none;
+  color:black;
+  font-weight:600;
+}
+/* header -links (email && site) */
+.main-address > a~a{
+  color:hsl(0,100%,47%);
+}
+
+/* ----------------------------- */
+
+
+/* ------------table------------ */
+.main-table{
+  width:100%;
+  border-top:1px solid #676767;
+  border-collapse:collapse;
+}
+td{
+  /* border:2px solid black; */
+   border-bottom:1px solid #676767;
+  padding:3%;
+}
+td[rowspan]+td{
+  border-bottom:none;
+}
+td:first-child{
+  width:20%;
+}
+/* Red colour should be applied in last column as well as column next to column has rowspan */
+td:not(td:last-child,td[rowspan]+td){
+  color:hsl(0,100%,47%);
+}
+td:last-child{
+  width:80%;
+}
+/* (width set to 70%) to wrap to next line increase gap let the content reach the limit automatically wraps Since flex-wrap is used */
+.interest-list,.skills-list{
+   display:flex;
+   flex-wrap:wrap;
+   line-height:5px;
+   gap:30px;
+   width:60%;
+   padding:0.4rem;
+   /* border:2px solid black; */
+}
+.interest-list > li,.skills-list>li{
+  list-style:none;
+  /* background-color: red; */
+}
+
+/* Education */
+/* .edu-address{
+  line-height:24px;
+} */
+ p{
+  display:flex;
+  justify-content: space-between;
+ }
+ .time-period{
+  color:#878787;
+ }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="This is facebook login clone">
+    <meta name="author" content="U Abdul Rahuman Fahath">
+    <title></title>
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+     <!-- root -->
+      <div class="root">
+        <!-- Main Container -->
+         <div class="main-container">
+          <!-- Section -1  -->
+           <div class="main-container__section-1">
+           <h1> <span id="fblogo"></span></h1>
+            <p>Facebook helps you connect and share with the people in your life.</p>
+           </div>
+
+           <!-- Section-2 -->
+            <div class="main-container__section-2">
+              <!-- Form Content -->
+              <form>
+                <input type="text" name="username" placeholder="Email address or phone number">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Log in</button>
+                <a href="#">Forget a Password?</a>
+                <hr>
+                <button type="button">Create new account</button>
+              </form>
+
+              <!-- Create page span -->
+               <span>
+                <a href="">Create a Page</a>
+                for a celebrity, brand or business.
+               </span>
+            </div>
+         </div>
+      </div>
+<!-- <span class='a-design'>a</span><span class='a-design1'></span> -->
+      <script>
+       var typed = new Typed('#fblogo', {
+  strings: ["facebook","connect","share"],
+  typeSpeed: 60,
+  startDelay: 15,
+  backSpeed: 60,
+  backDelay: 1000,
+  loop: true,
+  loopCount:Infinity,
+  showCursor: true
+});
+
+      </script>
+  </body>
+</html>

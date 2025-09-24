@@ -1,0 +1,201 @@
+/* Css Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Root Container */
+.root{
+  width:100%;
+  height:100vh;
+   background-color:#F2F4F7;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   font-family:Helvetica,Arial,sans-serif;
+}
+
+.main-container{
+  width:70%;
+  height:60%;
+  /* border:2px solid black; */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.main-container__section-1{
+  padding:3rem;
+  width:60%;
+  height:100%;
+    /* background-color: red; */
+  /* border:2px solid black; */
+}
+
+/* If i use typed js one more span for cursor is appearing at end of the text(.typed-cursor).I used h1 inside that first span displaying text(#fblogo) and next will be cursor span  */
+
+/* Note for Cursor blinking they are adding modifier class
+as typed-cursor--blink which will happen end of the word */
+h1{
+   font-size: 3.5rem;
+  color:#0866FF;
+  margin:0.7rem 0;
+  /* background-color: green;  */
+}
+/* Typed js span custom style for font */
+.typed-cursor{
+   font-size:3.6rem;
+}
+.main-container__section-1>p{
+  font-size: 1.8rem;
+}
+.main-container__section-2{
+  width:38%;
+  height:100%;
+  /* border:5px solid red; */
+  /* padding:1rem; */
+
+}
+form{
+    background-color: white;
+    width:100%;
+    padding:0.6rem 1rem;
+    border-radius:6px;
+    box-shadow:1px 1px 7px 2px rgba(0, 0, 0, 0.1);
+}
+input,button{
+  width:100%;
+  border-radius:5px;
+  border:1px solid #cacacad7;
+  padding:1em;
+  margin:0.5rem 0;
+}
+/* Common Anchor tag modification */
+a{
+ color:black;
+ text-decoration:none;
+ font-weight:bold;
+}
+/* Forget password anchor tag modification */
+a:not(span>a){
+  /* background-color: red; */
+  width:100%;
+  display:block;
+  padding:0.9em;
+  text-align: center;
+   color:#0866FF;
+  font-weight: initial;  /* common anchor tag modification font weight set to default*/
+}
+
+/* anchor tag hover state */
+a:hover{
+   text-decoration:underline;
+}
+/* Create Page text Span (avoiding section-1 span) */
+ span:not(.main-container__section-1 span){
+  /* background-color: red; */
+  display:block;
+  margin:1rem auto;
+  text-align: center;
+} 
+/* Horizontal rule between forget password && create new account */
+hr{
+  margin:5px auto 5px auto;
+  border-top:1px solid #cacaca5b;
+}
+
+/* Log in button */
+button[type=submit]
+{
+  background-color: #0866ff;
+  color:#F2F4F7;
+  border:none;
+  outline:none;
+  font-size:1.2rem;
+  font-weight:bold;
+  border-radius:6px;
+  padding:0.7em;
+}
+/* Log in button hover state */
+button[type=submit]:hover
+{
+     background-color: #1877f2;
+     cursor:pointer;
+}
+
+/* Create New Account button */
+button[type=button]
+{
+   margin: 1.8rem auto 0.9rem auto;
+  width:55%;
+  display: block;
+  background-color: hsl(110, 67%, 43%);
+  color:#F2F4F7;
+   border:none;
+  outline:none;
+  font-size:1rem;
+  font-weight:bold;
+   border-radius:6px;
+   padding:1em;
+}
+/* Create New Account hover button */
+button[type=button]:hover
+{
+  background-color: #36a402;
+  cursor: pointer;
+}
+/* input username && password placeholder styling */
+input::placeholder{
+  color:#888888;
+  font-weight: 500;
+}
+
+/* input username && password focus outline color */
+input:focus{
+  outline:1px solid #0867ffe8;
+}
+
+/* logo 'a' design */
+
+span.a-design{
+   position:relative;
+   color:transparent;
+}
+
+span.a-design::before{
+  content:'';
+  /* color:#0866ff; */
+  position:absolute;
+  top:34%;
+  left:1%;
+  width:0.5em;
+  height:0.53em;
+  border-radius:50%;
+  background-color: #0866ff;
+}
+span.a-design::after{
+  content:'';
+  background-color:#F2F4F7;
+  position:absolute;
+  top:44%;
+  left:30%;
+  border-radius:50%;
+  width:0.25em;
+  height:0.3em;
+  z-index:1;
+}
+
+span.a-design1{
+  position: relative;
+}
+span.a-design1::before{
+  content: '';
+  position:absolute;
+  top:34%;
+  right:10%;
+  width:0.13em;
+  height:0.53em;
+  background-color: #0866ff;
+}
