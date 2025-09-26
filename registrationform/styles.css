@@ -1,0 +1,84 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* root */
+.root{
+  width:100%;
+  height:100vh;
+  background-color: red;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* form container */
+form{
+  width:50%;
+  height:97%;
+  padding:2.7rem;
+  background-color: green;
+  color: white;
+}
+
+/* form heading */
+h2{
+  text-align: center;
+  /* background-color:yellow; */
+}
+
+/* full name  label*/
+.input-label{
+  display:block;
+  /* background-color: blue; */
+  width:100%;
+  height:40px;
+  line-height: 40px;
+  margin:20px auto 10px auto;
+}
+/* number bullet */
+.input-label >span{
+  color:yellow;
+}
+
+/* name inputs */
+.name-group{
+  /* background-color: blanchedalmond; */
+  width:100%;
+  display: flex;
+  gap:12px;
+}
+.name-group>input{
+  padding:0.5em;
+  width: 50%;
+  border-radius: 5px;
+}
+/* Country dropdown */
+select{
+  width:50%;
+}
+/* address */
+.address{
+  width:100%;
+  height:60px;
+  /* background-color: blue; */
+  position: relative;
+}
+.fa-solid{
+  position: absolute;
+  color:black;
+  top:6px;
+  left:5px;
+}
+.address>input{
+  width:100%;
+  padding: 0.5em;
+  padding-left:30px;
+  border-radius: 5px;
+}
+
+.margin-fixer{
+  margin-top:0;
+}
