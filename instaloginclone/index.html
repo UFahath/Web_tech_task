@@ -3,9 +3,82 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Instagram Login</title>
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./instagram-vector.png"  type="image/png" >
+    <link rel="stylesheet" href="./styles.css">
   </head>
-  <body>
-    
+  <body class="w-100">
+    <div class="w-100 root exact-center">
+    <main class="main-content exact-center">
+      <!-- 1 -->
+       <div class="main-content__landing-cover">
+         <img src="./instalogincover.png" alt="landing-cover_image">
+       </div>
+
+       <!-- 2 -->
+        <div class="main-content__form">
+          <form action="" method="get" autocorrect="" class="exact-center">
+            <!-- <img src="./instagram icon.gif" alt="" width="70px" height="70px"> -->
+            <i data-visualcompletion="css-img" aria-label="Instagram" class="" role="img" style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v4/yz/r/H_-3Vh0lHeK.png&quot;); background-position: 0px -2959px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;margin-bottom: 20px;"></i>
+            <div class="input-group">
+              <label for="username">Phone number, username, or email</label>
+              <input type="text" name="username" id="username" placeholder=" " autocomplete="username">
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="" autocomplete="off">
+            </div>
+
+             <button type="submit" class="w-100">Log In</button>
+
+             <span class="login-divider text-center">OR</span>
+
+             <a href=""><i class="fa-brands fa-facebook"></i> Log in with Facebook</a>
+             
+             <a href="">Forgot password?</a>
+
+             <span class="Sign-up_suggestion">Dont have an account? <a href="">Sign Up</a></span>
+          </form>
+        </div>
+    </main>
+    </div>
+
+    <footer>
+    <ul class="w-100">
+      <li>Meta</li>
+      <li>About</li>
+      <li>Blog</li>
+      <li>Jobs</li>
+      <li>Help</li>
+      <li>API</li>
+      <li>Privacy</li>
+      <li>Terms</li>
+      <li>Locations</li>
+      <li>Instagram Lite</li>
+      <li>Meta AI</li>
+      <li>Meta AI Articles</li>
+      <li>Threads</li>
+      <li>Contact Uploading & Non-Users</li>
+      <li>Meta Verified</li>
+    </ul>
+
+
+    <!-- ['af', 'ar', 'cs', 'da', 'de', 'el', 'en', 'en-gb', 'es', 'es-la', 'fa', 'fi', 'fr', 'he', 'id', 'it', 'ja', 'ko', 'ms', 'nb', 'nl', 'pl', 'pt-br', 'pt', 'ru', 'sv', 'th', 'tl', 'tr', 'zh-cn', 'zh-tw', 'bn', 'gu', 'hi', 'hr', 'hu', 'kn', 'ml', 'mr', 'ne', 'pa', 'si', 'sk', 'ta', 'te', 'ur', 'vi', 'zh-hk', 'bg', 'fr-ca', 'ro', 'sr', 'uk'] -->
+
+
+    <!-- (53) ['Afrikaans', 'العربية', 'Čeština', 'Dansk', 'Deutsch', 'Ελληνικά', 'English', 'English (UK)', 'Español (España)', 'Español', 'فارسی', 'Suomi', 'Français', 'עברית', 'Bahasa Indonesia', 'Italiano', '日本語', '한국어', 'Bahasa Melayu', 'Norsk', 'Nederlands', 'Polski', 'Português (Brasil)', 'Português (Portugal)', 'Русский', 'Svenska', 'ภาษาไทย', 'Filipino', 'Türkçe', '中文(简体)', '中文(台灣)', 'বাংলা', 'ગુજરાતી', 'हिन्दी', 'Hrvatski', 'Magyar', 'ಕನ್ನಡ', 'മലയാളം', 'मराठी', 'नेपाली', 'ਪੰਜਾਬੀ', 'සිංහල', 'Slovenčina', 'தமிழ்', 'తెలుగు', 'اردو', 'Tiếng Việt', '中文(香港)', 'Български', 'Français (Canada)', 'Română', 'Српски', 'Українська'] -->
+    <p class="text-center">
+      <select name="languages" id="language">
+        <option value="af">Afrikaans</option>
+        <option value="ar">العربية</option>
+        <option value="da">Dansk</option>
+        <option value="de">Deutsch</option>
+        <option value="en">English</option>
+      </select>
+       &nbsp;
+      <span>&copy; 2025 Instagram from Meta</span>
+    </footer>
   </body>
 </html>

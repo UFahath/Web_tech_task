@@ -36,12 +36,63 @@
          padding-bottom:2rem;
     }
 
+
+    /* button */
+  .btn-div{
+      margin:auto;
+    margin-top:40px;
+    width:40%;
+    background-color: blue;
+    border-radius: 10px;
+    position: relative;
+   
+  }
+    button{
+      border-radius: inherit;
+      width:100%;
+      height: 40px;
+      border:none;
+      outline: none;
+      padding:0.3rem 0.3rem;
+      position: relative;
+    }
+
+    button::before{
+      content: '';
+      position: absolute;
+      top:0;
+      left:-100%;
+      width: 100%;
+      height: 100%;
+      border: 2px solid red;
+       background:
+       linear-gradient(0deg,white) content-box,
+       conic-gradient(from 0deg ,#8a3ab9,#fbad50,#bc2a8d) border-box;
+    }
+    button:hover{
+       animation-name: btn-hover;
+       animation-iteration-count: 1;
+       animation-timing-function:ease-in-out;
+    }
+
+    @keyframes btn-hover {
+      from{
+        
+      }
+    }
   </style>
 </head>
 <body>
   <div class="input-group">
   <label for="email">Phone number,username,or email</label>
   <input type="email" name="email" id="email" placeholder=" ">
+  </div>
+
+
+
+
+  <div class="btn-div">
+    <button type="submit" onclick="window.alert()">Log In</button>
   </div>
 </body>
 </html>
